@@ -61,7 +61,7 @@
            <img src="./assets/opt-3.png" alt="">
            <p>Transfer Money</p>
          </button>
-         <button class="btn flex-col h-full py-4 btn-primary btn-soft rounded-2xl">
+         <button onclick="showOnly ('get-bonus')" class="btn flex-col h-full py-4 btn-primary btn-soft rounded-2xl">
            <img src="./assets/opt-4.png" alt="">
            <p>Get Bonus</p>
          </button>
@@ -141,6 +141,36 @@
     </div>
     </section>
    
+   <section id="get-bonus" class="w-11/12 mx-auto py-5 hidden">
+     <h2 class="text-xl font-bold"> Get Bonus</h2>
+
+      <div class="form pt-10">
+ 
+    <div class="card bg-base-100 w-full  shadow-xl mx-auto rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          
+
+          <label class="label text-neutral font-bold">Enter Bonus Coupon</label>
+          <input id="get-bonus-coupon"  type="number" class="input rounded-full 
+          bg-base-200 w-full" placeholder="Enter your coupon" value="4444" <input/>
+
+          <br>
+          <label class="label text-neutral font-bold">4 Digit Pin</label>
+          <input id="get-bonus-pin" type="password" class="input rounded-full 
+          bg-base-200 w-full" placeholder="Enter 4 Digit Pin" />
+          
+          <button id="get-bonus-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
+        </fieldset>
+      </div>
+    </div>
+  
+    </div>
+    </section>
+
+
+
+
 
 
     <section id="transfer-money" class="w-11/12 mx-auto py-5 hidden">
@@ -185,7 +215,7 @@
       <div class="card-body">
         <fieldset class="fieldset">
              <label class="label text-neutral font-bold">Select A Bank</label>
-          <select id="add-mony-bank" class="select w-full bg-base-200 rounded-full">
+          <select id="pay-bill-bank" class="select w-full bg-base-200 rounded-full">
             <option disabled selected>Select A Bank</option>
             <option value="DBBL">DBBL</option>
             <option value="IBBL">IBBL</option>
@@ -211,18 +241,16 @@
   
     </div>
     </section>
-    <section id="history" class="w-11/12 mx-auto py-5 ">
-      <h2 class="text-xl font-bold">Transaction </h2>
-      <div class="" id="history-container">
-        <div class="transaction-card p-5 bg-base-100" >
 
-        </div>
-      </div>
-    </section>
+
+
+
+     
     <script src="./script/machin.js"></script>
     <script src="./script/transfer-money.js"></script>
     <script src="./script/addmony.js"></script>
     <script src="./script/pay-bill.js"></script>
+    <script src="./script/get-bonus.js"></script>
     <script src="./script/cashout.js"></script>
 </body>
 </html>
