@@ -19,7 +19,8 @@ document.getElementById("cashout-btn").addEventListener("click", function(){
   const newBalance = currentBalance - Number(cashoutAmount)
   console.log(newBalance);
   if(newBalance < 0){
-    alert("invalid Amount")
+    alert(`Add Money Success from ${bankAccount} at ${new Date()}`);
+        setBalance(newBalance);
     return;
   }
   const pin =  getValueFromInput ("cashout-pin");

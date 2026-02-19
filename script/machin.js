@@ -27,10 +27,12 @@ function setBalance(value){
 function showOnly (id){
     const addMony = document.getElementById("add-mony")
     const cashout = document.getElementById("cashout")
+    const transfer = document.getElementById("transfer-money")
 
     //all id hide
     addMony.classList.add("hidden")
     cashout.classList.add("hidden")
+    transfer.classList.add("hidden")
 
     //show the id element
     const selected = document.getElementById(id)
