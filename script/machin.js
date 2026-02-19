@@ -28,11 +28,13 @@ function showOnly (id){
     const addMony = document.getElementById("add-mony")
     const cashout = document.getElementById("cashout")
     const transfer = document.getElementById("transfer-money")
+    const payBill = document.getElementById("pay-bill-money")
 
     //all id hide
     addMony.classList.add("hidden")
     cashout.classList.add("hidden")
     transfer.classList.add("hidden")
+    payBill.classList.add("hidden")
 
     //show the id element
     const selected = document.getElementById(id)

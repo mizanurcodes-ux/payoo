@@ -5,7 +5,7 @@ document.getElementById("add-mony-btn").addEventListener("click", function () {
         alert("Please select a bank");
         return;
     }
-
+    
     const accon = getValueFromInput("add-mony-number");
     if (accon.length != 11) {
         alert("Invalid account number");
